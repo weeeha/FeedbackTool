@@ -1,0 +1,18 @@
+{
+  "name": "feedback-tool-marketplace",
+  "description": "Video feedback to issues doc",
+  "owner": {
+    "name": "Nick Vyhouski"
+  },
+  "plugins": [
+    {
+      "name": "feedback-tool",
+      "description": "Turn a spoken feedback recording (Meta Quest capture or any video file) into a transcript, stamped contact sheets and an issues doc, with the heavy lifting done locally",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "Nick Vyhouski"
+      }
+    }
+  ]
+}
