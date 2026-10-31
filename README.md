@@ -1,5 +1,13 @@
 # FeedbackTool
 
+**Problem.** Typing up bug reports after testing an app is slow, and having a frontier model watch the recording instead is expensive.
+
+**Idea.** Talk through what is wrong on a recording. A local script turns it into a timestamped transcript and stamped contact sheets, and one small-model pass writes the issues doc.
+
+**Built.** A Claude Code plugin with one skill, `feedback-video`, and a Python script (ffmpeg, whisper, Pillow) that pulls the newest Meta Quest recording over adb or takes any local video, with unit tests. 4 commits on 2 days, Sep 18 to Oct 20, 2026.
+
+**Decision.** A local script does the transcription and frame picking, and one Sonnet pass writes the issues doc, instead of the session model watching the video. A five-minute recording then costs a few images and one Sonnet pass.
+
 Record yourself talking through what is wrong with your app. Get a list of issues back.
 
 A Claude Code plugin with one skill, `feedback-video`. A local script turns the
