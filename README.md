@@ -8,6 +8,8 @@
 
 **Decision.** A local script does the transcription and frame picking, and one Sonnet pass writes the issues doc, instead of the session model watching the video. A five-minute recording then costs a few images and one Sonnet pass.
 
+![Real run of feedback_video.py on a 25 second sample recording: the stage log, the timestamped transcript it wrote, and the contact sheet of stamped frames. The recording is a made-up sample, the output is captured from a real run.](docs/screenshots/feedback-video-run.png)
+
 Record yourself talking through what is wrong with your app. Get a list of issues back.
 
 A Claude Code plugin with one skill, `feedback-video`. A local script turns the
